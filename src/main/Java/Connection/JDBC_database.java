@@ -47,16 +47,7 @@ public class JDBC_database {
 
            myRs = stmt.executeQuery(query);
 
-             if(!myRs.isBeforeFirst()){
-
-               result = false;
-
-             }
-             else{
-
-               result =  true;
-
-             }
+              result = myRs.isBeforeFirst();
 
           }
 
@@ -65,7 +56,38 @@ public class JDBC_database {
       }
 
 
+    public Customer db_query_customer(String query) throws SQLException {
+
+        Customer customer = new Customer();
+
+        try( Connection con = DriverManager.getConnection(url,user,password) ) {
 
 
 
+            stmt = con.createStatement();
+
+            myRs = stmt.executeQuery(query);
+
+            if(myRs.next()) {
+
+
+                customer.setEmail(myRs.getString("Email_adress"));
+                customer.setPass(myRs.getString("Password"));
+                customer.setName(myRs.getString("Name"));
+            }
+
+
+
+        }
+
+
+      return customer;
     }
+
+
+
+
+
+
+
+}

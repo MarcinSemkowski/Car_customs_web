@@ -1,6 +1,6 @@
 package Hibernate;
 
-import lombok.Getter;
+
 
 import javax.persistence.*;
 

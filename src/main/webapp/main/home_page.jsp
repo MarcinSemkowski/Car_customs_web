@@ -48,40 +48,7 @@
 
 
               <section id="main">
-                  <div class="fancy-monk">
-                    <h1>Car Factory</h1>
-                    <div>
-                       <div class="signinup">
-                           <div>Not a member yet?</div>
-                           <div>Sign up now</div>
-                           <div>
 
-
-         <button type="button" class="btn btn-dark btn-large" class ="buttons" id="right-panel-link_1" onclick = "login()" >Login</button>
-
-              <script>
-              function login()
-              {
-                   location.href = "log_reg/log.jsp";
-              }
-              </script>
-
-
-              <button type="button" class="btn btn-dark btn-large" class = "buttons"  id="right-panel-link_2" onclick = "reg()" >Sing up</button>
-
-                    <script>
-                        function reg()
-                        {
-                             location.href = "log_reg/reg.jsp";
-                        }
-                        </script>
-
-
-
-                           </div>
-                       </div>
-                    </div>
-                  </div>
                 </section>
               	</div>
 

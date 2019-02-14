@@ -62,7 +62,7 @@ public class Sing_up_Servlet extends HttpServlet {
 
 
                 try(SessionFactory factory = new Configuration().configure().buildSessionFactory() ){
-                    //todo: Fetch data from database and compare to : if customer exist in db give a Exception : else add Customer to db
+
                     Session session = factory.getCurrentSession();
 
                     session.beginTransaction();
